@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --p-color1: hsl(225, 100%, 94%);
+  --p-color2: hsl(245, 75%, 52%);
+  --n-color1: hsl(225, 100%, 98%);
+  --n-color2: hsl(224, 23%, 55%);
+  --n-color3: hsl(223, 47%, 23%);
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background: url(./images/pattern-background-desktop.svg);
+  background-color: var(--p-color1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main {
+  max-width: 400px;
+  text-align: center;
+  margin-top: 5rem;
+  background-color: #ffffff;
+  height: auto;
+  border-radius: 0.8rem;
+  box-shadow: 5px 8px 17px -4px rgb(135, 127, 127);
+}
+.main-image {
+  max-width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+h1 {
+  color: var(--n-color3);
+  padding-top: 1rem;
+  font-weight: 900;
+}
+h2 {
+  color: var(--n-color3);
+  font-size: 1rem;
+  padding: 0 0.2rem;
+  font-weight: 800;
+}
+p {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: var(--n-color2);
+}
+span {
+  padding-top: 20px;
+
+  color: var(--p-color2);
+}
+.music {
+  display: flex;
+  background-color: var(--n-color1);
+  margin: 1rem 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.card {
+  padding: 0.2rem 0.8rem;
+}
+.change {
+  padding-left: 4rem;
+  margin: auto 0;
+  font-weight: 700;
+  color: var(--p-color2);
+}
+button {
+  background-color: var(--p-color2);
+  border-radius: 12px;
+  border: none;
+  color: var(--n-color1);
+  padding: 0.8em;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 5px 8px 10px -4px rgb(135, 127, 127);
+}
+button:hover {
+  background-color: hsl(245deg, 74%, 71%);
+}
+.buutton {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem;
+}
+.cancel {
+  font-size: 1.1rem;
+  margin-top: 1.4rem;
+  color: var(--n-color2);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+@media (max-width: 376px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+
+    background-color: var(--p-color1);
+    background-size: contain;
+  }
+  main {
+    margin: 1rem;
+  }
+}
